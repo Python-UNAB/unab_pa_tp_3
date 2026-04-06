@@ -48,7 +48,9 @@ class Linea:
 
 linea1 = Linea(Punto(0, 0), Punto(1, 1))
 
-print(linea1._punto_a)  
+print(linea1._punto_a)
+print(linea1.mueve_arriba(2))
+print(linea1.mueve_derecha(3))  
 
 # Ejercicio 4
 
