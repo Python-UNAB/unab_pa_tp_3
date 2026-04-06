@@ -25,25 +25,25 @@ class Punto:
 # Ejercicio 3
 
 class Linea(Punto, Punto):
-    def __init__(self, _punto_a, _punto_b):
-        self.punto_a = _punto_a
-        self.punto_b = _punto_b
+    def __init__(self, punto_a, punto_b):
+        self._punto_a = punto_a
+        self._punto_b = punto_b
     
     def mueve_derecha(self, distancia):
-        self.punto_a.x += distancia
-        self.punto_b.x += distancia
+        self._punto_a.x += distancia
+        self._punto_b.x += distancia
     
     def mueve_izquierda(self, distancia):
-        self.punto_a.x -= distancia
-        self.punto_b.x -= distancia
+        self._punto_a.x -= distancia
+        self._punto_b.x -= distancia
 
     def mueve_arriba(self, distancia):
-        self.punto_a.y += distancia
-        self.punto_b.y += distancia
+        self._punto_a.y += distancia
+        self._punto_b.y += distancia
     
     def mueve_abajo(self, distancia):
-        self.punto_a.y -= distancia
-        self.punto_b.y -= distancia
+        self._punto_a.y -= distancia
+        self._punto_b.y -= distancia
 
 
 # Ejercicio 4
