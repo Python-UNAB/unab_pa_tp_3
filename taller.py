@@ -24,7 +24,7 @@ class Punto:
 
 # Ejercicio 3
 
-class Linea(Punto, Punto):
+class Linea:
     def __init__(self, punto_a, punto_b):
         self._punto_a = punto_a
         self._punto_b = punto_b
@@ -45,6 +45,10 @@ class Linea(Punto, Punto):
         self._punto_a.y -= distancia
         self._punto_b.y -= distancia
 
+
+linea1 = Linea(Punto(0, 0), Punto(1, 1))
+
+print(linea1._punto_a)  
 
 # Ejercicio 4
 
